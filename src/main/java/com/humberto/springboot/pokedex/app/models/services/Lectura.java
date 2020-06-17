@@ -17,9 +17,9 @@ public class Lectura {
 
 	public Quote leer() {
 		String url =  "https://pokeapi.co/api/v2/pokemon/";
+		System.out.println("entre");
 		Quote quote = restTemplate.getForObject(url, Quote.class);
-		System.out.print("hola!!");
-		System.out.print(quote.getNext());
+		System.out.println(quote.getNext());
 		return quote;
 	}
 

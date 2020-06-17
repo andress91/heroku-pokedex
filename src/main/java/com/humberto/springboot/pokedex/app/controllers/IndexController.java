@@ -16,6 +16,7 @@ public class IndexController {
 	
 	@GetMapping({ "/", "", "/index" })
 	public String index(Model model) {
+		System.out.println("hola!!");
 		model.addAttribute("titulo", servicio.leer());
 		return "index";
 	}
